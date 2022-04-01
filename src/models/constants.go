@@ -15,15 +15,20 @@ const TCP_BUFFER_SIZE = 1024 * 64
 
 // DEFAULT_RELAY is the default relay used (can be set using --relay)
 var (
-	DEFAULT_RELAY      = "croc.schollz.com"
+	// DEFAULT_RELAY      = "croc.schollz.com"
+	DEFAULT_RELAY      = "data.cygnusbio.net"
 	DEFAULT_RELAY6     = "croc6.schollz.com"
 	DEFAULT_PORT       = "9009"
-	DEFAULT_PASSPHRASE = "pass123"
+	DEFAULT_PASSPHRASE = "cygnus-2022"
 	INTERNAL_DNS       = false
 )
 
 // publicDns are servers to be queried if a local lookup fails
 var publicDns = []string{
+	"223.5.5.5",               //AliDNS
+	"223.6.6.6",               //AliDNS
+	"202.106.0.20",            //CygDNS
+	"10.0.48.3",               //CygNASDNS
 	"1.0.0.1",                // Cloudflare
 	"1.1.1.1",                // Cloudflare
 	"[2606:4700:4700::1111]", // Cloudflare
