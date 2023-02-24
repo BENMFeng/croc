@@ -3,8 +3,8 @@
 ```
 git clone https://github.com/BENMFeng/croc.git
 cd croc
-git chekcout -b cyg
-git pull origin
+git pull origin cyg
+git checkout cyg
 go build .
 export PATH=$PATH:$PWD
 ```
